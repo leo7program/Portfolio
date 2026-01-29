@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leonardo Ferreira | Portfólio</title>
+  <meta name="description" content="Portfólio de Leonardo Ferreira, desenvolvedor em formação com foco em Full-Stack. HTML, CSS e Java." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --primary: #38bdf8;
+      --secondary: #22c55e;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    header h1 span {
+      color: var(--primary);
+    }
+
+    header p {
+      margin-top: 1.2rem;
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 700px;
+    }
+
+    .badges {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+
+    .badge {
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--primary);
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    section {
+      background: rgba(17, 24, 39, 0.9);
+      border-radius: 18px;
+      padding: 2rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .about p {
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-card {
+      background: #020617;
+      border: 1px solid rgba(148,163,184,0.1);
+      border-radius: 14px;
+      padding: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+    }
+
+    .skill-card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--secondary);
+    }
+
+    .skill-card p {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .links {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: #020617;
+      background: var(--primary);
+      padding: 0.8rem 1.4rem;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+    }
+
+    .links a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(56,189,248,0.4);
+      background: #7dd3fc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Leonardo <span>Ferreira</span></h1>
+    <p>
+      Desenvolvedor em formação, 17 anos, focado em me tornar um <strong>Full-Stack Developer</strong>.
+      Curioso, disciplinado e sempre buscando evoluir através da prática, estudo e projetos reais.
+    </p>
+    <div class="badges">
+      <div class="badge">HTML</div>
+      <div class="badge">CSS</div>
+      <div class="badge">Java</div>
+      <div class="badge">Full-Stack (em formação)</div>
+      <div class="badge">Inglês Fluente</div>
+      <div class="badge">Espanhol em Aprimoramento</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>Sobre mim</h2>
+      <p>
+        Meu nome é Leonardo Ferreira e eu sou apaixonado por tecnologia e programação.
+        Desde cedo venho estudando desenvolvimento web, criando projetos próprios e
+        buscando entender não só como escrever código, mas como resolver problemas de forma eficiente.
+        <br /><br />
+        Meu objetivo é ingressar no mercado como desenvolvedor <strong>Full-Stack</strong>,
+        aprender com profissionais experientes e crescer junto com a empresa.
+        Sou dedicado, aprendo rápido e não tenho medo de desafios.
+      </p>
+    </section>
+
+    <section>
+      <h2>Habilidades Técnicas</h2>
+      <div class="skills">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <p>Estruturação semântica, acessibilidade básica e organização limpa de páginas web.</p>
+        </div>
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <p>Layouts modernos, responsivos, animações, flexbox, grid e foco em design profissional.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Java</h3>
+          <p>Lógica sólida, orientação a objetos e base para aplicações robustas e escaláveis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Links & Contato</h2>
+      <p style="color: var(--muted); margin-bottom: 1rem;">
+        Veja meus projetos, acompanhe minha evolução e entre em contato:
+      </p>
+      <div class="links">
+        <a href="https://github.com/leo7program" target="_blank">GitHub</a>
+        <a href="https://www.instagram.com/leo7ocean/" target="_blank">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 • Leonardo Ferreira • Em constante evolução 🚀
+  </footer>
+</body>
+</html>
